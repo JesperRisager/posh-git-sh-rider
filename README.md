@@ -1,5 +1,8 @@
-posh-git-bash
+posh-git-bash-rider
 =============
+
+JRJ:
+This version has been changed to use colors in the range 30-37 instead of 90-97 as they do not seem to be supported in the console for Jetbrains Rider, when using "C:\Program Files\Git\bin\bash.exe" under Ctrl+Alt+S | Tools | Terminal.
 
 [![Build Status](https://travis-ci.org/lyze/posh-git-sh.svg?branch=master)](https://travis-ci.org/lyze/posh-git-sh)
 
