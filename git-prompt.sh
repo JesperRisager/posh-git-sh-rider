@@ -128,10 +128,14 @@ __posh_git_echo () {
 
     local Red='\033[0;31m'
     local Green='\033[0;32m'
-    local BrightRed='\033[0;91m'
-    local BrightGreen='\033[0;92m'
-    local BrightYellow='\033[0;93m'
-    local BrightCyan='\033[0;96m'
+#    local BrightRed='\033[0;91m' #JRJ: Not supported in Riders Terminal.
+    local BrightRed='\033[0;31m'
+#    local BrightGreen='\033[0;92m' #JRJ: Not supported in Riders Terminal.
+    local BrightGreen='\033[0;32m'
+#    local BrightYellow='\033[0;93m' #JRJ: Not supported in Riders Terminal.
+    local BrightYellow='\033[0;33m'
+#    local BrightCyan='\033[0;96m' #JRJ: Not supported in Riders Terminal.
+    local BrightCyan='\033[0;36m'
 
     local DefaultForegroundColor=$(__posh_color '\e[m') # Default no color
     local DefaultBackgroundColor=
